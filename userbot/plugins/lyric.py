@@ -35,7 +35,7 @@ async def _(event):
     song = Song.find_song(query)
     if song:
         if song.lyrics:
-            reply = song.format()
+            reply = song.format__()__
         else:
             reply = "Couldn't find any lyrics for that song! try with artist name along with song if still doesnt work try `.glyrics`"
     else:
