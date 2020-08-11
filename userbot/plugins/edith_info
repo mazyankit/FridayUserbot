@@ -1,0 +1,59 @@
+"""Emoji
+Available Commands:
+.edith"""
+
+from telethon import events
+
+import asyncio
+from uniborg.util import admin_cmd
+from telethon.tl.functions.users import GetFullUserRequest
+
+
+
+@borg.on(admin_cmd(pattern=r"edith"))
+
+async def _(event):
+
+    if event.fwd_from:
+
+        return
+
+    animation_interval = 2
+
+    animation_ttl = range(0, 11)
+
+    #input_str = event.pattern_match.group(1)
+
+    #if input_str == "edith":
+
+    if event.reply_to_msg_id:
+        reply_message = await event.get_reply_message()
+        replied_user = await event.client(GetFullUserRequest(reply_message.from_id))
+        firstname = replied_user.user.first_name
+        usname = replied_user.user.username
+        idd = reply_message.from_id
+        if idd==813878981:
+            await event.edit("This is My Master\nI can't hack my master's Account\n**How dare you trying to hack my master's account AssKisser!**\n\n__Your account has been hacked! Pay 69$ to my master__ [FridayOT](t.me/fridayOT) __to release your account__😏")
+        else:
+            await event.edit("Hacking..")
+            animation_chars = [
+        
+            "`Processing....`",
+            "`Processing....`",
+            "`Connecting to TeamAtulsat...",    
+            "`TeamAtulsat is verifying access...'",
+            "`Access granted...`",
+            "`Downloading Edith data from TeamAtulsat....... 2%\n█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `  ",
+            "`Downloading Edith data from TeamAtulsat....... 20%\n█████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
+            "`Downloading Edith data from TeamAtulsat.......54%\n███████████▒▒▒▒▒▒▒▒▒▒▒▒ `",
+            "`Data Downloaded sucessfuly...`\n\n `Userbot :` **E.D.I.T.H.**\n `About Userbot:`Even Dead, I'm The Hero (E.D.I.T.H.) is an augmented reality security, defense and artificial tactical intelligence system created by TeamAtul` __Based upon Spider man's A.I.__ \n\n `Connected to sat : TeamAtulsat`\n`TeamAtulsat version : v.2.2.5` \n `Edith OS : 3.1.4`\n Creator : **©ᴛᴇᴀᴍᴀᴛᴜʟ™**"
+
+            ]
+
+            for i in animation_ttl:
+
+                await asyncio.sleep(animation_interval)
+
+                await event.edit(animation_chars[i % 11])
+    else:
+        await event.edit("No User is Defined\n are u dumb\n reply to a user.")
