@@ -20,13 +20,13 @@ PREV_REPLY_MESSAGE = {}
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
 CUSTOM_MIDDLE_PMP = str(CUSTOM_PMPERMIT) if CUSTOM_PMPERMIT else "**YOU HAVE TRESPASSED TO MY MASTERS INBOX** \n`THIS IS ILLEGAL AND REGARDED AS A CRIME`"
-USER_BOT_WARN_ZERO = "`You were spamming my Boss's inbox, henceforth your retarded lame ass has been blocked by my master's userbot.` "
-USER_BOT_NO_WARN = ("`Hello ! This is` **F.R.I.D.A.Y**\n"
-                    "`Private Messaging Security Protocol ⚠️`\n\n"
-                    "**Currently My Boss**\n"
-                    f"{DEFAULTUSER} is Busy ! So Better Don't Spam His Inbox !\n\n"
+USER_BOT_WARN_ZERO = "`Spam karega bsdk aukat dekh apni mc abb ek vi message krr ke dikha.` "
+USER_BOT_NO_WARN = ("`Hello ! This is` **E.D.I.T.H.**\n"
+                    "`Private Messaging Security Protocol by TeamAtul⚠️`\n\n"
+                    "**Currently My Master**\n"
+                    f"{DEFAULTUSER} is Busy ! So Don't Try to Spam in master's Inbox !\n\n"
                     f"{CUSTOM_MIDDLE_PMP} \n\n"
-                    "**Now You Are In Trouble So Send** 🍁 `/start` 🍁  **To Start A Valid Conversation!!**")
+                    "**Do** 💫 `/start` 💫  **To Start A Valid Conversation!!**")
 
 
 if Var.PRIVATE_GROUP_ID is not None:
