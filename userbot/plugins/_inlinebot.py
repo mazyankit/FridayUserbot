@@ -64,7 +64,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             plugin_name = event.data_match.group(1).decode("UTF-8")
             help_string = ""
             try:
-                for i in CMD_LIST🧩[plugin_name]🧩:
+                for i in CMD_LIST[plugin_name]:
                     help_string += i
                     help_string += "\n"
             except:
