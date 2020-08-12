@@ -54,4 +54,4 @@ async def _(event):
     await event.edit("Pong 🏓")
     end = datetime.now()
     ms = (end - start).microseconds / 1000
-    await event.edit(f"Pong Speed is `{ms}` 🏓")
+    await event.edit(f"Pong Speed is `{ms}` ⏱")
