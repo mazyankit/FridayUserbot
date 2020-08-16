@@ -72,8 +72,10 @@ async def updater(message):
     )
 
     if not changelog:
-        await message.edit("Trying To Pull Updates !")
-        await asyncio.sleep(10)
+        await message.edit("Connecting to **TeamAtulsat**....")
+        await asyncio.sleep(8)
+        await message.edit("Connection established...")
+        await asyncio.sleep(5)
  
     message_one = NEW_BOT_UP_DATE_FOUND.format(
         branch_name=active_branch_name,
