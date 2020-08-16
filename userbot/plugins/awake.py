@@ -29,7 +29,7 @@ if ALIVE_MESSAGE is None:
    ALIVE_MESSAGE += f"`TELETHON VERSION: 6.0.9 \n\n`"
    ALIVE_MESSAGE += f"`Python: 3.7.4\n\n`"
    ALIVE_MESSAGE += f"`Edith OS : 3.14\n\n`"
-   ALIVE_MESSAGE += "`I'll Be With my Master Till My Dyno Ends!!☠ \n\n` 
+   ALIVE_MESSAGE += "`I'll Be With my Master Till My Dyno Ends!!☠ \n\n`" 
    ALIVE_MESSAGE += f"`MY MASTER👑`: {DEFAULTUSER} \n\n "
                 
             
