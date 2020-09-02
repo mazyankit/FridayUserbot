@@ -2,7 +2,7 @@
   "name": "E.D.I.T.H.",
   "description": "Userbot created by TeamAtul and join https://t.me/TeamAtul_support_Official for any problems or support",
   "logo": "https://telegra.ph/file/1ab39bd2b1e5d38280c05.jpg",
-    "keywords": [
+  "keywords": [
     "telegram",
     "userbot",
     "plugin",
@@ -71,11 +71,6 @@
       "value": "",
       "required": false
     },
-    "LYDIA_API_KEY": {
-      "description": "Needed for Lydia AI. Follow https://telegra.ph/Lydia-09-05 to get your API.",
-      "value": "",
-      "required": false
-    },
     "HEROKU_API_KEY": {
       "description": "Go to https://dashboard.heroku.com/account, scroll down and press Reveal API.Required for updater to work.",
       "value": ""
@@ -119,23 +114,22 @@
     "PM_LOGGR_BOT_API_ID": {
       "description": "Enter Valid Id. Required For Pm Logger Plugin Ignore If You Want [Not Usefull]",
       "required": false
-
-
     },
     "TZ": {
       "description": "Required for Correct Time for autopic get from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
       "value": "",
       "required": false
     }
-
   },
-  "addons": [{
-    "plan": "heroku-postgresql",
-    "options": {
-      "version": "9.6"
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "9.6"
+      }
     }
-  }],
-"buildpacks": [
+  ],
+  "buildpacks": [
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     },
