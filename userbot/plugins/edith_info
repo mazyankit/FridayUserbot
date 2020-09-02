@@ -37,10 +37,10 @@ async def _(event):
         else:
             await event.edit("Hacking..")
             animation_chars = [
-        
+
             "`Processing....`",
             "`Processing....`",
-            "`Connecting to TeamAtulsat...",    
+            "`Connecting to TeamAtulsat...",
             "`TeamAtulsat is verifying access...'",
             "`Access granted...`",
             "`Downloading Edith data from TeamAtulsat....... 2%\n█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `  ",
