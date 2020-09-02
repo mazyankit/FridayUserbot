@@ -1,10 +1,12 @@
 # Created by @jisan7509 & @Sur_vivor
 
 import asyncio
-from telethon import events
-from userbot.utils import admin_cmd
 from platform import uname
+
+from telethon import events
+
 from userbot import ALIVE_NAME
+from userbot.utils import admin_cmd
 
 n = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
 

@@ -1,8 +1,11 @@
-from telethon import events
-import subprocess
 import asyncio
+import subprocess
 import time
+
+from telethon import events
+
 from userbot.utils import admin_cmd
+
 
 # @command(pattern="^.cmds", outgoing=True)
 @borg.on(admin_cmd(pattern=r"cmds"))
