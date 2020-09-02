@@ -27,12 +27,11 @@ async def _(event):
 
     animation_ttl = range(0, 12)
 
-   # input_str = event.pattern_match.group(1)
+    # input_str = event.pattern_match.group(1)
 
     await event.edit("Deploying...")
 
     animation_chars = [
-
         "**Heroku Connecting To Latest Github Build (TeamAtul/EdithUserbot)**",
         "**Build started by user** **{DEFAULTUSER}**",
         "**Deploy** `535a74f0` **by user** **{DEFAULTUSER}**",
@@ -44,8 +43,7 @@ async def _(event):
         "**State changed from starting to up**",
         "__INFO:E..D.I.T.H.:Logged in as 557667062__",
         "__INFO:E.D.I.T.H.:Successfully loaded all plugins__",
-        "**Build Succeeded**"
-
+        "**Build Succeeded**",
     ]
 
     for i in animation_ttl:

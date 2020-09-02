@@ -51,116 +51,121 @@ NOOBSTR = [
     "`Kysa kysaaaa haaan? Phir MAAR nhi Khayega tu?`",
     "`Zikr Jinka hota hai galiyo meh woh bhosdika ajj paya gya naliyo me`",
 ]
-ZALG_LIST = [["̖",
-              " ̗",
-              " ̘",
-              " ̙",
-              " ̜",
-              " ̝",
-              " ̞",
-              " ̟",
-              " ̠",
-              " ̤",
-              " ̥",
-              " ̦",
-              " ̩",
-              " ̪",
-              " ̫",
-              " ̬",
-              " ̭",
-              " ̮",
-              " ̯",
-              " ̰",
-              " ̱",
-              " ̲",
-              " ̳",
-              " ̹",
-              " ̺",
-              " ̻",
-              " ̼",
-              " ͅ",
-              " ͇",
-              " ͈",
-              " ͉",
-              " ͍",
-              " ͎",
-              " ͓",
-              " ͔",
-              " ͕",
-              " ͖",
-              " ͙",
-              " ͚",
-              " ",
-              ],
-             [" ̍",
-              " ̎",
-              " ̄",
-              " ̅",
-              " ̿",
-              " ̑",
-              " ̆",
-              " ̐",
-              " ͒",
-              " ͗",
-              " ͑",
-              " ̇",
-              " ̈",
-              " ̊",
-              " ͂",
-              " ̓",
-              " ̈́",
-              " ͊",
-              " ͋",
-              " ͌",
-              " ̃",
-              " ̂",
-              " ̌",
-              " ͐",
-              " ́",
-              " ̋",
-              " ̏",
-              " ̽",
-              " ̉",
-              " ͣ",
-              " ͤ",
-              " ͥ",
-              " ͦ",
-              " ͧ",
-              " ͨ",
-              " ͩ",
-              " ͪ",
-              " ͫ",
-              " ͬ",
-              " ͭ",
-              " ͮ",
-              " ͯ",
-              " ̾",
-              " ͛",
-              " ͆",
-              " ̚",
-              ],
-             [" ̕",
-              " ̛",
-              " ̀",
-              " ́",
-              " ͘",
-              " ̡",
-              " ̢",
-              " ̧",
-              " ̨",
-              " ̴",
-              " ̵",
-              " ̶",
-              " ͜",
-              " ͝",
-              " ͞",
-              " ͟",
-              " ͠",
-              " ͢",
-              " ̸",
-              " ̷",
-              " ͡",
-              ]]
+ZALG_LIST = [
+    [
+        "̖",
+        " ̗",
+        " ̘",
+        " ̙",
+        " ̜",
+        " ̝",
+        " ̞",
+        " ̟",
+        " ̠",
+        " ̤",
+        " ̥",
+        " ̦",
+        " ̩",
+        " ̪",
+        " ̫",
+        " ̬",
+        " ̭",
+        " ̮",
+        " ̯",
+        " ̰",
+        " ̱",
+        " ̲",
+        " ̳",
+        " ̹",
+        " ̺",
+        " ̻",
+        " ̼",
+        " ͅ",
+        " ͇",
+        " ͈",
+        " ͉",
+        " ͍",
+        " ͎",
+        " ͓",
+        " ͔",
+        " ͕",
+        " ͖",
+        " ͙",
+        " ͚",
+        " ",
+    ],
+    [
+        " ̍",
+        " ̎",
+        " ̄",
+        " ̅",
+        " ̿",
+        " ̑",
+        " ̆",
+        " ̐",
+        " ͒",
+        " ͗",
+        " ͑",
+        " ̇",
+        " ̈",
+        " ̊",
+        " ͂",
+        " ̓",
+        " ̈́",
+        " ͊",
+        " ͋",
+        " ͌",
+        " ̃",
+        " ̂",
+        " ̌",
+        " ͐",
+        " ́",
+        " ̋",
+        " ̏",
+        " ̽",
+        " ̉",
+        " ͣ",
+        " ͤ",
+        " ͥ",
+        " ͦ",
+        " ͧ",
+        " ͨ",
+        " ͩ",
+        " ͪ",
+        " ͫ",
+        " ͬ",
+        " ͭ",
+        " ͮ",
+        " ͯ",
+        " ̾",
+        " ͛",
+        " ͆",
+        " ̚",
+    ],
+    [
+        " ̕",
+        " ̛",
+        " ̀",
+        " ́",
+        " ͘",
+        " ̡",
+        " ̢",
+        " ̧",
+        " ̨",
+        " ̴",
+        " ̵",
+        " ̶",
+        " ͜",
+        " ͝",
+        " ͞",
+        " ͟",
+        " ͠",
+        " ͢",
+        " ̸",
+        " ̷",
+        " ͡",
+    ],
+]
 
 
 EMOJIS = [
@@ -382,7 +387,7 @@ RUNSREACTS = [
     "May the odds be ever in your favour.",
     "Famous last words.",
     "And they disappeared forever, never to be seen again.",
-    "\"Oh, look at me! I'm so cool, I can run from a bot!\" - this person",
+    '"Oh, look at me! I\'m so cool, I can run from a bot!" - this person',
     "Yeah yeah, just tap /kickme already.",
     "Here, take this ring and head to Mordor while you're at it.",
     "Legend has it, they're still running...",
@@ -452,7 +457,6 @@ PRO_STRINGS = [
     "`UH DONT KNOW MEH SO STAY AWAY LAWDE`",
     "`Kysa kysaaaa haaan? Phir MAAR nhi Khayega tu?`",
     "`Zikr Jinka hota hai galiyo meh woh bhosdika ajj paya gya naliyo me`",
-
 ]
 CHU_STRINGS = [
     "`Taare hai Asmaan me very very bright jaat na jla bskd dekh le apni hight.`",
@@ -600,7 +604,7 @@ SLAP_TEMPLATES = [
     "pins {victim} down and repeatedly {hits} them with a {item}.",
     "grabs up a {item} and {hits} {victim} with it.",
     "ties {victim} to a chair and {throws} a {item} at them.",
-    "gave a friendly push to help {victim} learn to swim in lava."
+    "gave a friendly push to help {victim} learn to swim in lava.",
 ]
 
 ITEMS = [
@@ -700,7 +704,9 @@ async def who(event):
             await event.edit(caption)
 
         except:
-            await event.edit("`Can't slap this person, need to fetch some sticks and stones !!`")
+            await event.edit(
+                "`Can't slap this person, need to fetch some sticks and stones !!`"
+            )
 
 
 async def get_user(event):
@@ -752,8 +758,7 @@ async def slap(replied_user, event):
     hit = random.choice(HIT)
     throw = random.choice(THROW)
 
-    caption = "..." + temp.format(victim=slapped,
-                                  item=item, hits=hit, throws=throw)
+    caption = "..." + temp.format(victim=slapped, item=item, hits=hit, throws=throw)
 
     return caption
 
@@ -856,13 +861,17 @@ async def vapor(vpr):
 @register(outgoing=True, pattern="^.repo$")
 async def repo(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("Hey ! I am Using [Edith Userbot](https://github.com/TeamAtul/EdithUserbot) !")
+        await e.edit(
+            "Hey ! I am Using [Edith Userbot](https://github.com/TeamAtul/EdithUserbot) !"
+        )
 
 
 @register(outgoing=True, pattern="^.fridayuserbot$")
 async def source(sed):
     if not sed.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await sed.edit("View Source Code By Clicking [Here](https://github.com/TeamAtul/EdithUserbot) !")
+        await sed.edit(
+            "View Source Code By Clicking [Here](https://github.com/TeamAtul/EdithUserbot) !"
+        )
 
 
 @register(outgoing=True, pattern="^.str(?: |$)(.*)")
@@ -882,9 +891,7 @@ async def stretch(stret):
 
         count = random.randint(3, 10)
         reply_text = re.sub(
-            r"([aeiouAEIOUａｅｉｏｕＡＥＩＯＵаеиоуюяыэё])",
-            (r"\1"*count),
-            message
+            r"([aeiouAEIOUａｅｉｏｕＡＥＩＯＵаеиоуюяыэё])", (r"\1" * count), message
         )
         await stret.edit(reply_text)
 
@@ -915,14 +922,11 @@ async def zal(zgfy):
                 randint = random.randint(0, 2)
 
                 if randint == 0:
-                    charac = charac.strip() + \
-                        random.choice(ZALG_LIST[0]).strip()
+                    charac = charac.strip() + random.choice(ZALG_LIST[0]).strip()
                 elif randint == 1:
-                    charac = charac.strip() + \
-                        random.choice(ZALG_LIST[1]).strip()
+                    charac = charac.strip() + random.choice(ZALG_LIST[1]).strip()
                 else:
-                    charac = charac.strip() + \
-                        random.choice(ZALG_LIST[2]).strip()
+                    charac = charac.strip() + random.choice(ZALG_LIST[2]).strip()
 
             reply_text.append(charac)
 
@@ -999,7 +1003,12 @@ async def thanos(thanos):
 @register(outgoing=True, pattern="^.hardabuse$")
 async def fuckedd(abusehard):
     """ Dont Use this Too much bsdk -_-"""
-    if not abusehard.text[0].isalpha() and abusehard.text[0] not in ("/", "#", "@", "!"):
+    if not abusehard.text[0].isalpha() and abusehard.text[0] not in (
+        "/",
+        "#",
+        "@",
+        "!",
+    ):
         index = random.randint(0, len(ABUSEHARD_STRING) - 1)
         reply_text = ABUSEHARD_STRING[index]
         await abusehard.edit(reply_text)
@@ -1118,7 +1127,12 @@ async def spongemocktext(mock):
 @register(outgoing=True, pattern="^.clap(?: |$)(.*)")
 async def claptext(memereview):
     """ Praise people! """
-    if not memereview.text[0].isalpha() and memereview.text[0] not in ("/", "#", "@", "!"):
+    if not memereview.text[0].isalpha() and memereview.text[0] not in (
+        "/",
+        "#",
+        "@",
+        "!",
+    ):
         textx = await memereview.get_reply_message()
         message = memereview.pattern_match.group(1)
         if message:
@@ -1144,8 +1158,8 @@ async def smrk(smk):
     elif textx:
         message = textx
         message = str(message.message)
-    if message == 'dele':
-        await smk.edit(message + 'te the hell' + "ツ")
+    if message == "dele":
+        await smk.edit(message + "te the hell" + "ツ")
         await smk.edit("ツ")
     else:
         smirk = " ツ"
@@ -1153,7 +1167,9 @@ async def smrk(smk):
         await smk.edit(reply_text)
 
 
-@register(outgoing=True, pattern="^.lfy (.*)",)
+@register(
+    outgoing=True, pattern="^.lfy (.*)",
+)
 async def let_me_google_that_for_you(lmgtfy_q):
     if not lmgtfy_q.text[0].isalpha() and lmgtfy_q.text[0] not in ("/", "#", "@", "!"):
         textx = await lmgtfy_q.get_reply_message()
@@ -1165,18 +1181,18 @@ async def let_me_google_that_for_you(lmgtfy_q):
             query = query.message
         query_encoded = query.replace(" ", "+")
         lfy_url = f"http://lmgtfy.com/?s=g&iie=1&q={query_encoded}"
-        payload = {'format': 'json', 'url': lfy_url}
-        r = requests.get('http://is.gd/create.php', params=payload)
+        payload = {"format": "json", "url": lfy_url}
+        r = requests.get("http://is.gd/create.php", params=payload)
         await lmgtfy_q.edit(f"[{query}]({r.json()['shorturl']})")
         if BOTLOG:
             await bot.send_message(
-                BOTLOG_CHATID,
-                "LMGTFY query `" + query + "` was executed successfully",
+                BOTLOG_CHATID, "LMGTFY query `" + query + "` was executed successfully",
             )
 
 
-CMD_HELP.update({
-    "memes": ".cowsay\
+CMD_HELP.update(
+    {
+        "memes": ".cowsay\
 \nUsage: cow which says things.\
 \n\n.milksay\
 \nUsage: Weird Milk that can speak\
@@ -1253,4 +1269,5 @@ CMD_HELP.update({
 \n\n.abuse\
 \nUsage: Protects you from unwanted peeps.\
 \n\n\nThanks to 🅱️ottom🅱️ext🅱️ot (@NotAMemeBot) for some of these."
-})
+    }
+)

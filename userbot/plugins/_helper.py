@@ -25,7 +25,7 @@ async def cmd_list(event):
                         force_document=True,
                         allow_cache=False,
                         caption="**COMMANDS**",
-                        reply_to=reply_to_id
+                        reply_to=reply_to_id,
                     )
                     await event.delete()
             else:
@@ -42,12 +42,9 @@ async def cmd_list(event):
         else:
             help_string = """Userbot Modules For\n [EdithUserBot](https://t.me/EdithQD)\n`Userbot Helper to reveal all the modules`"""
             results = await bot.inline_query(  # pylint:disable=E0602
-                tgbotusername,
-                help_string
+                tgbotusername, help_string
             )
             await results[0].click(
-                event.chat_id,
-                reply_to=event.reply_to_msg_id,
-                hide_via=True
+                event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
             )
             await event.delete()
