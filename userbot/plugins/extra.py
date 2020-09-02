@@ -99,7 +99,8 @@ async def source(e):
 # @register(outgoing=True, pattern="^.readme$")
 async def reedme(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("https://github.com/TeamAtul/EdithUserbot/blob/master/README.md")
+        await e.edit(
+            "https://github.com/TeamAtul/EdithUserbot/blob/master/README.md")
 
 
 @borg.on(admin_cmd("heart$"))

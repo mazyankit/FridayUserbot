@@ -22,6 +22,8 @@ pm_caption += "**Heroku Database** : `AWS - Working Properly`\n\n"
 pm_caption += "**License** : [MIT Licence](github.com/StarkGang/FridayUserbot/blob/master/LICENSE)\n"
 pm_caption += "Copyright : By [TeamAtul@Github](GitHub.com/TeamAtul)\n"
 pm_caption += " [Deploy EdithUserbot](https://telegra.ph/FRIDAY-06-15)"
+
+
 # @command(outgoing=True, pattern="^.alive$")
 @borg.on(admin_cmd(pattern=r"alive"))
 async def amireallyalive(alive):

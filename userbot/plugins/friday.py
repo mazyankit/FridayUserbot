@@ -32,13 +32,13 @@ async def _(event):
                 await borg.send_file(
                     event.chat_id,
                     audio,
-                    caption="⚡Boss Listen To This Audio"
-                    + naam
-                    + "\n`Check out` [EDITH](https://github.com/TeamAtul/EdithUserbot)",
+                    caption="⚡Boss Listen To This Audio" + naam +
+                    "\n`Check out` [EDITH](https://github.com/TeamAtul/EdithUserbot)",
                 )
                 await event.delete()
             except YouBlockedUserError:
-                await event.edit("**Error:** `unblock` @FridayUserobot `and retry!")
+                await event.edit(
+                    "**Error:** `unblock` @FridayUserobot `and retry!")
     elif sysarg == "help":
         async with borg.conversation(bot) as conv:
             try:
@@ -49,11 +49,13 @@ async def _(event):
                 await borg.send_file(
                     event.chat_id,
                     audio,
-                    caption="**Check Out Sir**\n`Check out` [EDITH](https://github.com/TeamAtul/EdithUserbot)",
+                    caption=
+                    "**Check Out Sir**\n`Check out` [EDITH](https://github.com/TeamAtul/EdithUserbot)",
                 )
                 await event.delete()
             except YouBlockedUserError:
-                await event.edit("**Error:** `unblock` @EdithUserobot `and retry!`")
+                await event.edit(
+                    "**Error:** `unblock` @EdithUserobot `and retry!`")
     elif sysarg == "movies":
         async with borg.conversation(bot) as conv:
             try:
@@ -64,11 +66,13 @@ async def _(event):
                 await borg.send_file(
                     event.chat_id,
                     audio,
-                    caption="**Here is Movie**\n`Check out` [EDITH](https://github.com/TeamAtul/EdithUserbot)",
+                    caption=
+                    "**Here is Movie**\n`Check out` [EDITH](https://github.com/TeamAtul/EdithUserbot)",
                 )
                 await event.delete()
             except YouBlockedUserError:
-                await event.edit("**Error:** `unblock` @EdithUserobot `and retry!`")
+                await event.edit(
+                    "**Error:** `unblock` @EdithUserobot `and retry!`")
     elif sysarg == "song":
         async with borg.conversation(bot) as conv:
             try:
@@ -79,11 +83,13 @@ async def _(event):
                 await borg.send_file(
                     event.chat_id,
                     audio,
-                    caption="**Hoi ! Here iz music**\n`Check out` [EDITH](https://github.com/TeamAtul/EdithUserbot)",
+                    caption=
+                    "**Hoi ! Here iz music**\n`Check out` [EDITH](https://github.com/TeamAtul/EdithUserbot)",
                 )
                 await event.delete()
             except YouBlockedUserError:
-                await event.edit("**Error:** `unblock` @EdithUserobot `and retry!`")
+                await event.edit(
+                    "**Error:** `unblock` @EdithUserobot `and retry!`")
     elif sysarg == "meme":
         async with borg.conversation(bot) as conv:
             try:
@@ -94,10 +100,12 @@ async def _(event):
                 await borg.send_file(
                     event.chat_id,
                     audio,
-                    caption="**Lol**\n`Check out` [EDITH](https://github.com/TeamAtul/EdithUserbot)",
+                    caption=
+                    "**Lol**\n`Check out` [EDITH](https://github.com/TeamAtul/EdithUserbot)",
                 )
             except YouBlockedUserError:
-                await event.edit("**Error:** `unblock` @EdithUserobot `and retry!`")
+                await event.edit(
+                    "**Error:** `unblock` @EdithUserobot `and retry!`")
     elif sysarg == "nord":
         async with borg.conversation(bot) as conv:
             try:
@@ -108,7 +116,8 @@ async def _(event):
                 await borg.send_file(event.chat_id, audio)
                 await event.delete()
             except YouBlockedUserError:
-                await event.edit("**Error:** `unblock` @EdithUserobot `and retry!`")
+                await event.edit(
+                    "**Error:** `unblock` @EdithUserobot `and retry!`")
     elif sysarg == "cc":
         async with borg.conversation(bot) as conv:
             try:
@@ -119,9 +128,9 @@ async def _(event):
                 await borg.send_message(event.chat_id, audio.text)
                 await event.delete()
             except YouBlockedUserError:
-                await event.edit("**Error:** `unblock` @EdithUserobot `and retry!`")
+                await event.edit(
+                    "**Error:** `unblock` @EdithUserobot `and retry!`")
     else:
         await brog.send_message(
-            event.chat_id, "**INVALID** -- FOR HELP COMMAND IS **hcc help**"
-        )
+            event.chat_id, "**INVALID** -- FOR HELP COMMAND IS **hcc help**")
         await event.delete()

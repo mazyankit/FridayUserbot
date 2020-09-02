@@ -32,9 +32,9 @@ async def set_not_afk(event):
         except Exception as e:  # pylint:disable=C0103,W0703
             await borg.send_message(  # pylint:disable=E0602
                 event.chat_id,
-                "Please set `PLUGIN_CHANNEL` "
-                + "for the proper functioning of afk functionality "
-                + "in @FridayOT\n\n `{}`".format(str(e)),
+                "Please set `PLUGIN_CHANNEL` " +
+                "for the proper functioning of afk functionality " +
+                "in @FridayOT\n\n `{}`".format(str(e)),
                 reply_to=event.message.id,
                 silent=True,
             )
@@ -56,8 +56,8 @@ async def _(event):
     reason = event.pattern_match.group(1)
     if not USER_AFK:  # pylint:disable=E0602
         last_seen_status = await borg(  # pylint:disable=E0602
-            functions.account.GetPrivacyRequest(types.InputPrivacyKeyStatusTimestamp())
-        )
+            functions.account.GetPrivacyRequest(
+                types.InputPrivacyKeyStatusTimestamp()))
         if isinstance(last_seen_status.rules, types.PrivacyValueAllowAll):
             afk_time = datetime.datetime.now()  # pylint:disable=E0602
         USER_AFK = f"yes: {reason}"  # pylint:disable=E0602
@@ -78,9 +78,8 @@ async def _(event):
 
 @borg.on(
     events.NewMessage(  # pylint:disable=E0602
-        incoming=True, func=lambda e: bool(e.mentioned or e.is_private)
-    )
-)
+        incoming=True,
+        func=lambda e: bool(e.mentioned or e.is_private)))
 async def on_afk(event):
     if event.fwd_from:
         return
@@ -110,8 +109,7 @@ async def on_afk(event):
             elif days > 1:
                 if days > 6:
                     date = now + datetime.timedelta(
-                        days=-days, hours=-hours, minutes=-minutes
-                    )
+                        days=-days, hours=-hours, minutes=-minutes)
                     afk_since = date.strftime("%A, %Y %B %m, %H:%I")
                 else:
                     wday = now + datetime.timedelta(days=-days)
@@ -124,10 +122,10 @@ async def on_afk(event):
                 afk_since = f"`{int(seconds)}s` **ago**"
         msg = None
         message_to_reply = (
-            f"**My Boss is Offline** ! \n\n**Offline Since** : {afk_since}"
-            + f"\n\n__Kindly Leave A Message__ ! \n`He Will Reply To You Soon !`"
-            if reason
-            else f"**Hello, Boss Is Offline Right Now And May Be Forgot List Reason ! Any Way He Will Come Back Soon !**"
+            f"**My Boss is Offline** ! \n\n**Offline Since** : {afk_since}" +
+            f"\n\n__Kindly Leave A Message__ ! \n`He Will Reply To You Soon !`"
+            if reason else
+            f"**Hello, Boss Is Offline Right Now And May Be Forgot List Reason ! Any Way He Will Come Back Soon !**"
         )
         msg = await event.reply(message_to_reply)
         await asyncio.sleep(5)
