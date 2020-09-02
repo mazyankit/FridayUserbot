@@ -3,7 +3,6 @@
 Available Commands:
 
 .deploy"""
-
 import asyncio
 
 from telethon import events

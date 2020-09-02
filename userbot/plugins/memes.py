@@ -4,9 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 #
-
 """ Userbot module for having some fun with people. """
-
 import asyncio
 import random
 import re
@@ -18,8 +16,10 @@ from cowpy import cow
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 
-from userbot import CMD_HELP, YOUTUBE_API_KEY
-from userbot.utils import admin_cmd, register
+from userbot import CMD_HELP
+from userbot import YOUTUBE_API_KEY
+from userbot.utils import admin_cmd
+from userbot.utils import register
 
 # ================= CONSTANT =================
 RENDISTR = [

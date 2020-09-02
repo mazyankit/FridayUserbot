@@ -1,5 +1,4 @@
 # Created by @jisan7509 & @Sur_vivor
-
 import asyncio
 from platform import uname
 
