@@ -35,7 +35,7 @@ RESTARTING_APP = "Re-Starting heroku application"
 # -- Constants End -- #
 
 
-#@command(pattern="^.update", outgoing=True)
+# @command(pattern="^.update", outgoing=True)
 @borg.on(admin_cmd(pattern=r"update"))
 async def updater(message):
     try:
@@ -76,7 +76,7 @@ async def updater(message):
         await asyncio.sleep(8)
         await message.edit("Connection established...")
         await asyncio.sleep(5)
- 
+
     message_one = NEW_BOT_UP_DATE_FOUND.format(
         branch_name=active_branch_name,
         changelog=changelog
@@ -122,7 +122,8 @@ async def updater(message):
                     remote.set_url(heroku_git_url)
                 else:
                     remote = repo.create_remote("heroku", heroku_git_url)
-                asyncio.get_event_loop().create_task(deploy_start(bot, message, HEROKU_GIT_REF_SPEC, remote))
+                asyncio.get_event_loop().create_task(
+                    deploy_start(bot, message, HEROKU_GIT_REF_SPEC, remote))
 
             else:
                 await message.edit("Please create the var HEROKU_APP_NAME as the key and the name of your bot in heroku as your value.")
@@ -131,7 +132,7 @@ async def updater(message):
             await message.edit(NO_HEROKU_APP_CFGD)
     else:
         await message.edit("No heroku api key found in HEROKU_API_KEY var")
-        
+
 
 def generate_change_log(git_repo, diff_marker):
     out_put_str = ""
@@ -140,11 +141,10 @@ def generate_change_log(git_repo, diff_marker):
         out_put_str += f"•[{repo_change.committed_datetime.strftime(d_form)}]: {repo_change.summary} <{repo_change.author}>\n"
     return out_put_str
 
+
 async def deploy_start(bot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
     await message.edit("Trying To Restart Dyno To Finalize Updation Process ! \nYou Can Do `.alive` To Check If I am Alive !")
     remote.push(refspec=refspec)
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
-
-    
