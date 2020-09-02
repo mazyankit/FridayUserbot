@@ -2,13 +2,7 @@
   "name": "E.D.I.T.H.",
   "description": "Userbot created by TeamAtul and join https://t.me/TeamAtul_support_Official for any problems or support",
   "logo": "https://telegra.ph/file/1ab39bd2b1e5d38280c05.jpg",
-  "keywords": [
-    "telegram",
-    "userbot",
-    "plugin",
-    "modular",
-    "productivity"
-  ],
+  "keywords": ["telegram", "userbot", "plugin", "modular", "productivity"],
   "repository": "https://github.com/TeamAtul/EdithUserbot/",
   "website": "#TODO",
   "success_url": "#TODO",
